@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Nacelle';
+    src: url('Nacelle-Bold.eot');
+    src: url('Nacelle-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Nacelle-Bold.woff2') format('woff2'),
+        url('Nacelle-Bold.woff') format('woff'),
+        url('Nacelle-Bold.ttf') format('truetype'),
+        url('Nacelle-Bold.svg#Nacelle-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nacelle';
+    src: url('Nacelle-Black.eot');
+    src: url('Nacelle-Black.eot?#iefix') format('embedded-opentype'),
+        url('Nacelle-Black.woff2') format('woff2'),
+        url('Nacelle-Black.woff') format('woff'),
+        url('Nacelle-Black.ttf') format('truetype'),
+        url('Nacelle-Black.svg#Nacelle-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nacelle';
+    src: url('Nacelle-Regular.eot');
+    src: url('Nacelle-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Nacelle-Regular.woff2') format('woff2'),
+        url('Nacelle-Regular.woff') format('woff'),
+        url('Nacelle-Regular.ttf') format('truetype'),
+        url('Nacelle-Regular.svg#Nacelle-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nacelle';
+    src: url('Nacelle-Heavy.eot');
+    src: url('Nacelle-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Nacelle-Heavy.woff2') format('woff2'),
+        url('Nacelle-Heavy.woff') format('woff'),
+        url('Nacelle-Heavy.ttf') format('truetype'),
+        url('Nacelle-Heavy.svg#Nacelle-Heavy') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nacelle';
+    src: url('Nacelle-Thin.eot');
+    src: url('Nacelle-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Nacelle-Thin.woff2') format('woff2'),
+        url('Nacelle-Thin.woff') format('woff'),
+        url('Nacelle-Thin.ttf') format('truetype'),
+        url('Nacelle-Thin.svg#Nacelle-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nacelle';
+    src: url('Nacelle-SemiBold.eot');
+    src: url('Nacelle-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Nacelle-SemiBold.woff2') format('woff2'),
+        url('Nacelle-SemiBold.woff') format('woff'),
+        url('Nacelle-SemiBold.ttf') format('truetype'),
+        url('Nacelle-SemiBold.svg#Nacelle-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nacelle';
+    src: url('Nacelle-Light.eot');
+    src: url('Nacelle-Light.eot?#iefix') format('embedded-opentype'),
+        url('Nacelle-Light.woff2') format('woff2'),
+        url('Nacelle-Light.woff') format('woff'),
+        url('Nacelle-Light.ttf') format('truetype'),
+        url('Nacelle-Light.svg#Nacelle-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nacelle';
+    src: url('Nacelle-UltraLight.eot');
+    src: url('Nacelle-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('Nacelle-UltraLight.woff2') format('woff2'),
+        url('Nacelle-UltraLight.woff') format('woff'),
+        url('Nacelle-UltraLight.ttf') format('truetype'),
+        url('Nacelle-UltraLight.svg#Nacelle-UltraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
