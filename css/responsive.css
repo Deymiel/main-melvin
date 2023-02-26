@@ -175,10 +175,8 @@
         opacity: 1;
     }
     .project-slider .project-wrapper .technology {
-        font-size: 10px;
-    }
-    .project-slider .project-wrapper:hover .technology {
         transform: translateY(80px);
+        font-size: 10px;
         opacity: 1;
     }
     .project-slider .project-wrapper .project-tag {
@@ -192,6 +190,13 @@
     .project-slider .project-wrapper .project-tag{
         background: #fff;
         color: #000;
+    }
+    .fp-section{
+        min-height: 50vh;
+        padding: 50px 0;
+    }
+    .home{
+        margin-top: 10rem;
     }
 }
 
