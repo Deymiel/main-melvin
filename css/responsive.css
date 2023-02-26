@@ -198,6 +198,14 @@
     .home{
         margin-top: 10rem;
     }
+    .skills-slider .owl-item .logo-wrapper img {
+        width: auto;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+    .skills-slider .owl-item .logo-wrapper{
+        padding: 30px;
+    }
 }
 
 
