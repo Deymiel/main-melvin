@@ -863,4 +863,8 @@ main {
   z-index: 10;
 }
 
+.overlay-cover {
+  transition: transform 500ms ease-in-out;
+}
+
 /*# sourceMappingURL=main.css.map */
