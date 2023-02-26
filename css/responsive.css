@@ -158,6 +158,41 @@
     .section-header {
         margin-bottom: 20px;
     }
+    .fp-section,
+    .fp-slide,
+    .fp-tableCell{
+        height: auto !important;
+        justify-content: center !important;
+        align-items: center;
+        display: flex !important;
+    }
+    .project-slider .project-wrapper{
+        border: 2px solid rgba(0, 0, 0, 0.7);
+    }
+    .project-slider .project-wrapper .project-name {
+        font-size: 14px;
+        transform: translateY(60px) !important;
+        opacity: 1;
+    }
+    .project-slider .project-wrapper .technology {
+        font-size: 10px;
+    }
+    .project-slider .project-wrapper:hover .technology {
+        transform: translateY(80px);
+        opacity: 1;
+    }
+    .project-slider .project-wrapper .project-tag {
+        font-size: 7px;
+        padding: 3px;
+    }
+    .project-slider .project-wrapper:after {
+        background: #000;
+        opacity: 0.7;
+    }
+    .project-slider .project-wrapper .project-tag{
+        background: #fff;
+        color: #000;
+    }
 }
 
 
@@ -183,6 +218,7 @@
     .my-form .form-group input::placeholder, .my-form .form-group input, .my-form .form-group textarea, .my-form .form-group textarea::placeholder {
         padding: 6px;
     }
+    
 }
 
 @media(max-width: 550px){
@@ -200,6 +236,9 @@
     }
     .section-header .line {
         margin: 5px 0;
+    }
+    .side-element-overlay {
+        width: 250px;
     }
 }
 @media(max-width: 500px){
