@@ -224,10 +224,10 @@
        margin: 0;
        gap: 10px;
     }
-    .skills-slider .owl-item .logo-wrapper img {
+    /* .skills-slider .owl-item .logo-wrapper img {
         width: 65px;
         height: 100px;
-    }
+    } */
     .my-form .form-group input::placeholder, .my-form .form-group input, .my-form .form-group textarea, .my-form .form-group textarea::placeholder {
         padding: 6px;
     }
