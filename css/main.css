@@ -194,7 +194,7 @@ a {
 
 .side-element-overlay {
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 20vw;
   left: 0;
   top: 0;
@@ -202,11 +202,17 @@ a {
   background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(23, 23, 23) 100%);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-.side-element-overlay img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.side-element-overlay .navbar-brand {
+  padding: 1.042vw 3.2vw;
+}
+.side-element-overlay .navbar-brand .logo-name {
+  color: #fff;
+  font-size: 1.563vw;
+  font-family: "Mattone 150";
+  font-weight: 600;
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 .side-element-overlay .navbar-nav {
   position: absolute;
@@ -798,6 +804,63 @@ main {
   border-radius: 50%;
   margin: 0 auto;
   display: block;
+}
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+}
+.toggle-button span {
+  display: block;
+  width: 18px;
+  margin-bottom: 3px;
+  height: 2px;
+  border: 0;
+  box-sizing: content-box;
+  background-clip: content-box;
+  transition: background-color 500ms ease-in-out 250ms;
+  background-color: #fff;
+  transform: scale(1.2);
+}
+
+.side-element-overlay {
+  transition: transform 500ms ease-in-out;
+}
+.side-element-overlay.active-sidebar {
+  transform: translateX(0);
+}
+.side-element-overlay .mobile-button {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  z-index: 999;
+}
+.side-element-overlay .mobile-button .toggle-button span {
+  border-radius: 20px;
+}
+.side-element-overlay .mobile-button .toggle-button span:nth-child(2) {
+  display: none;
+}
+.side-element-overlay .mobile-button .toggle-button span:nth-child(1) {
+  transform: translateY(6px) rotate(-225deg);
+  display: block;
+  top: -3px;
+  position: relative;
+}
+.side-element-overlay .mobile-button .toggle-button span:nth-child(3) {
+  transform: translateY(-6px) rotate(225deg);
+  display: block;
+  bottom: -4px;
+  position: relative;
+}
+
+.desktop-button {
+  display: none;
+  padding: 0 50px;
+  position: absolute;
+  top: 40px;
+  z-index: 10;
 }
 
 /*# sourceMappingURL=main.css.map */

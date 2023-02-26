@@ -3,3 +3,223 @@
         max-width: 1280px;
     }
 }
+
+
+@media(max-width: 991px){
+    .my-image {
+        height: 20vw;
+        width: 20vw;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    .nav-area .nav-tabs {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-flow: nowrap;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .nav-area .nav-tabs li {
+        width: 100%;
+    }
+    .social-media-links {
+        margin-bottom: 15px;
+    }
+    .project-slider .project-wrapper {
+        padding-bottom: 58%;
+    }
+}
+
+
+@media(max-width: 768px){
+    .my-form .form-group input::placeholder,
+    .my-form .form-group input,
+    .my-form .form-group textarea,
+    .my-form .form-group textarea::placeholder{
+        font-size: 12px;
+    }
+    .side-element-overlay .navbar-nav li {
+        margin-bottom: 1vw;
+    }
+    .side-element-overlay .navbar-nav li a {
+        font-size: 14px;
+    }
+    .side-element-overlay .navbar-nav li a.active {
+        font-size: 18px;
+    }
+
+    /* start of new styling of mobile */
+    .side-element-overlay .mobile-button{
+        display: block;
+    }
+    .side-element-overlay{
+        transform: translateX(-500px);
+    }
+    main {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 50px;
+    }
+    .desktop-button{
+        display: block;
+    }
+    .section-header .sub-header {
+        font-size: 16px;
+    }
+    .section-header .main-header {
+        font-size: 40px;
+    }
+    .custom-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        white-space: nowrap;
+        width: fit-content;
+    }
+    .section-header .sub-header-large {
+        font-size: 30px;
+    }
+    .about-me-content p, .section-content p {
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .my-image {
+        height: 150px;
+        width: 150px;
+    }
+    .skills-slider .owl-item .logo-wrapper p {
+        font-size: 14px;
+    }
+    .skills-slider .owl-item .logo-wrapper img {
+        width: 90px;
+        height: 100px;
+    }
+    .skills-slider .owl-dots .owl-dot,
+    .project-slider .owl-dots .owl-dot {
+        height: 5px;
+        width: 20px;
+    }
+    .skills-slider .owl-dots .owl-dot.active, 
+    .project-slider .owl-dots .owl-dot.active {
+        width: 30px;
+    }
+  
+    .nav-area .nav-tabs li a {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .social-media-links h2 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .social-media-links ul li a {
+        height: 40px;
+        width: 40px;
+    }
+    .social-media-links ul li a i {
+        font-size: 20px;
+    }
+    .my-form {
+        padding: 30px 30px 20px;
+        margin-top: 10px;
+    }
+    #nokey {
+        position: fixed;
+        width: 100%;
+    }
+    .side-element-overlay {
+        width: 300px;
+    }
+    .side-element-overlay .navbar-brand .logo-name {
+        font-size: 20px;
+    }
+    .side-element-overlay .navbar-nav li {
+        margin-bottom: 10px;
+    }
+    .side-element-overlay .navbar-brand {
+        padding: 10px 30px;
+    }
+    .side-element-overlay .navbar-nav {
+        left: 30px;
+    }
+    .side-element-overlay .mobile-button {
+        top: 30px;
+    }
+    .overlay-cover.show{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,.4);
+        backdrop-filter: blur(4px);
+        top: 0;
+        left: 0;
+        z-index: 20;
+    }
+    .section-header {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media(max-width: 650px){
+    .section-header .sub-header-large {
+        font-size: 20px;
+    }
+    .social-media-links h2 {
+        font-size: 12px;
+    }
+    .custom-btn {
+        font-size: 12px;
+        margin: 0 !important;
+    }
+    .button-container  {
+       margin: 0;
+       gap: 10px;
+    }
+    .skills-slider .owl-item .logo-wrapper img {
+        width: 65px;
+        height: 100px;
+    }
+    .my-form .form-group input::placeholder, .my-form .form-group input, .my-form .form-group textarea, .my-form .form-group textarea::placeholder {
+        padding: 6px;
+    }
+}
+
+@media(max-width: 550px){
+    .nav-area .nav-tabs {
+        flex-wrap: wrap;
+    }
+    .nav-area .nav-tabs li{
+        width: 48%;
+    }.nav-area .nav-tabs li {
+        width: 48%;
+        margin-bottom: 0;
+    }
+    main, .desktop-button {
+        padding: 0 25px;
+    }
+    .section-header .line {
+        margin: 5px 0;
+    }
+}
+@media(max-width: 500px){
+    .section-header .main-header {
+        font-size: 30px;
+    }
+    #nokey {
+        opacity: 0.2;
+    }
+}
+
+@media(max-width: 400px){
+    .nav-area .nav-tabs li a {
+        font-size: 10px;
+        padding: 10px;
+    }
+    .nav-area .nav-tabs {
+        gap: 8px;
+    }
+    .section-header .main-header {
+        font-size: 25px;
+    }
+}

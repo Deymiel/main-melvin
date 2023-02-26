@@ -27,40 +27,38 @@
 	<body data-aos-duration="1000" data-aos-delay="0">
         <!-- FOR HEADER -->
         
-        <header>
+        <!-- <header>
             <div class ="navbar-container" id ="navbar">
                  <nav class="navbar navbar-expand-lg main_nav">
                     <a class="navbar-brand" href="index.html">
                        <span class="logo-name">MLVN.</span>
                     </a>
-                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="nav-toggle__text"></span>
-                    </button> -->
-                    <!-- <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav ml-auto no-filter">
-                            <li class ="nav-item">
-                                <a href="#home" class="nav-click">Home</a>
-                            </li>
-                            <li class ="nav-item">
-                                <a href="#about" class="nav-click">About Me</a>
-                            </li>
-                            <li class ="nav-item">
-                                <a href="#skillset" class="nav-click"> Skillset</a>
-                            </li>
-                            <li class ="nav-item">
-                                <a href="#projects" class="nav-click">Projects</a>
-                            </li>
-                            <li class ="nav-item">
-                                <a href="#contact" class="nav-click">Contact</a>
-                            </li>
-                         </ul>
-                    </div> -->
                 </nav>
             </div>
-        </header>
+        </header> -->
+
+        <div class="overlay-cover"></div>
+        <div class="desktop-button">
+            <button class="toggle-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
         
         <div class="side-element-overlay shadow">
             <!-- <img src="images/animation/star.gif"> -->
+            <a class="d-block navbar-brand" href="index.html">
+                <span class="logo-name">MLVN.</span>
+            </a>
+            <div class="mobile-button">
+                <button class="toggle-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
             <ul class="navbar-nav ml-auto no-filter" id ="menu">
                 <li>
                     <a href="#home" class="nav-click" data-menuanchor="home">Home</a>
@@ -239,9 +237,6 @@
                                         <li class="nav-item">
                                             <a href="#shopify" class="nav-link" data-bs-toggle="tab">Shopify</a>
                                         </li>
-                                        <!-- <li class="nav-item">
-                                            <a href="#collaborate" class="nav-link" data-bs-toggle="tab">Collaboration</a>
-                                        </li> -->
                                     </ul>
                                 </div>
                                 </div>
@@ -509,25 +504,42 @@
                         <div class="line"></div>
                         <div class="contact-content-wrapper">
                             <div class="row ">
+                                <div class="col-lg-6 order-lg-2">
+                                    <div class="social-media-links">
+                                        <h2 class="animate animate-2">Social Media and Project Repository: </h2>
+                                        <ul class="animate animate-3">
+                                            <li>
+                                                <a href="https://linkedin.com/in/melvin-logdat-a18b751a9" target="_blank">
+                                                    <i class="fa fa-linkedin"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/Deymiel" target="_blank">
+                                                    <i class="fa fa-github"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                                 <div class="col-lg-6">
                                     <form class="my-form animate animate-2" name="contact" method="POST" data-netlify="true">
                                         <div class="row">
-                                            <div class="col-md-12 col-lg-6 col-form">
+                                            <div class="col-6 col-form">
                                                 <div class="form-group">
                                                     <input type="text" placeholder="First name.." name="firstname">
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 col-lg-6 col-form">
+                                            <div class="col-6 col-form">
                                                 <div class="form-group">
                                                     <input type="text" placeholder="Last name" name ="lastname">
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 col-lg-6 col-form">
+                                            <div class="col-6 col-form">
                                                 <div class="form-group">
                                                     <input type="tel" placeholder="Phone" name ="phone">
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 col-lg-6 col-form">
+                                            <div class="col-6 col-form">
                                                 <div class="form-group">
                                                     <input type="email" placeholder="Email" name ="email">
                                                 </div>
@@ -555,24 +567,6 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="social-media-links">
-                                        <h2 class="animate animate-2">Social Media and Project Repository: </h2>
-                                        <ul class="animate animate-3">
-                                            <li>
-                                                <a href="https://linkedin.com/in/melvin-logdat-a18b751a9" target="_blank">
-                                                    <i class="fa fa-linkedin"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://github.com/Deymiel" target="_blank">
-                                                    <i class="fa fa-github"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                               
                             </div>
                         </div>
                     </div>
@@ -604,6 +598,7 @@
                 $('#fullpage').fullpage({
                     sectionSelector: '.section',
                     autoScrolling:true,
+                    responsiveWidth: 769,
                     scrollHorizontally: true,
                     scrollingSpeed: 1400,
                     easing: 'easeInOutCubic',
@@ -611,36 +606,12 @@
                     menu: '#menu',
                     css3: true,
                     anchors: ['home', 'about', 'skillset', 'projects', 'contact'],
-                    // onLeave: function(){
-                    //     $('.section [data-aos]').each(function(){
-                    //         $(this).removeClass("aos-animate");
-                    //         $('.line').removeClass('animate-line');
-                    //     });
-                    // },
-                    // onSlideLeave: function(){
-                    //     $('.slide [data-aos]').each(function(){
-                    //         $(this).removeClass("aos-animate");
-                    //         $('.line').removeClass('animate-line');
-                    //     });
-                    // },
-                    // afterSlideLoad: function(){
-                    //     $('.slide.active [data-aos]').each(function(){
-                    //         $(this).addClass("aos-animate");
-                    //         $('.line').addClass('animate-line');
-                    //     });
-                    // },
-                    // afterLoad: function(){
-                    //     $('.section.active [data-aos]').each(function(){
-                    //         $(this).addClass("aos-animate");
-                    //         $('.line').addClass('animate-line');
-                    //     });
-                    // }
                 }); 
 
                 $(document).ready(function() {
                     var owl = $('.skills-slider');
                     owl.children().each( function( index ) {
-                        $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
+                        $(this).attr( 'data-position', index ); 
                     });
                     owl.owlCarousel({
                         margin: 20,
@@ -653,12 +624,12 @@
                         loop: true,
                         responsive: {
                             0: {
-                                items: 3,
-                                margin: 10,
+                                items: 1,
+                                margin: 5,
                                 center: false,
                             },
                             600: {
-                                items: 3,
+                                items: 2,
                                 margin: 10,
                                 center: false,
                             },
@@ -668,8 +639,7 @@
                         },
                     });
                     $(document).on('click', '.owl-item>li', function() {
-                    // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
-                    var speed = 500;  // in ms
+                    var speed = 500; 
                     owl.trigger('to.owl.carousel', [$(this).data( 'position' ), speed] );
                     });
                 });
